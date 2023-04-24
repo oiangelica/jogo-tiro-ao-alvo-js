@@ -30,8 +30,6 @@ function sortearPosicao(maximo) {
     return Math.floor(Math.random() * maximo); // Math.floor arredonda para um numero a menos.
 }
 
-
-
 function atualizarTela() {
 
     limparTela();
@@ -42,14 +40,14 @@ function atualizarTela() {
 
 setInterval(atualizarTela, 800);
 
-function disparar(evento){
+function disparar(evento) {
     var x = evento.pageX - tela.offsetLeft;
     var y = evento.pageY - tela.offsetTop;
 
-    if((x < xAleatorio + raio)
-    &&(x > xAleatorio - raio)
-    &&(y < yAleatorio + raio)
-    &&(y > yAleatorio - raio)){
+    if ((x < xAleatorio + raio)
+        && (x > xAleatorio - raio)
+        && (y < yAleatorio + raio)
+        && (y > yAleatorio - raio)) {
         alert("Parabéns!! Você acertou o alvo!")
     }
 
